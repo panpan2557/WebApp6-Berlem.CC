@@ -27,15 +27,21 @@
 > **Hadoop + HBase + zookeeper**
 
 > - หน้าที่: เป็นตัวช่วยใน การจัดการ และควบคุมการทำงานของ Hadoop ระหว่าง Slave Node
-> - วิธีติดตั้ง: ติดตั้ง hadoop ตาม guideline ทั่วๆไปแบบ single-node ก่อน แล้วจึง config (อะไรต่อวะ เขียนต่อด้วยว่าต้องเซตให้ตัวนี้เป็น master ใน slave)
+> - วิธีติดตั้ง: ติดตั้ง hadoop ตาม guideline ทั่วๆไปแบบ single-node ก่อน แล้วจึง config 
+> 	1. ssh access: เพิ่ม public key ให้ master สามารถ remote เข้า slave ได้ทุกตัว
+>	2. สร้างไฟล์ master และ slave โดยข้างในคือ ที่อยู่ตาม hosts ของเครื่อง master และ slave
+> 	3. ตั้งค่าไฟล์ hdfs-site.xml, core-site.xml และ mapred-site.xml ให้เป็นชื่อของเครื่อง master
+>	4. Restart hadoop & yarn
+
 
 **Slave Node (2)**
 
 > ** Hadoop**
 
 > - หน้าที่: เป็นตัวประมวนผลของ Hadoop ที่ได้รับคำสั่งมาจาก MasterNode
-> - วิธีติดตั้ง: ติดตั้ง hadoop ตาม guideline ทั่วๆไปแบบ single-node ก่อน แล้วจึง config (อะไรต่อวะ เขียนต่อด้วยว่าต้องเซตตัวนี้ให้เป็น slave ใน master)
-
+> - วิธีติดตั้ง: ติดตั้ง hadoop ตาม guideline ทั่วๆไปแบบ single-node ก่อน แล้วจึง config 
+>	1. ตั้งค่าไฟล์ hdfs-site.xml, core-site.xml และ mapred-site.xml ให้เป็นชื่อของเครื่อง master
+>	2. Restart hadoop & yarn
 
 ----------
 
@@ -95,6 +101,9 @@
 **Problem**
 - Code MapReduce สามารถรันได้ แต่ไม่สามารถ ดูผลลัพธ์ใน HTable จาก Master ได้เนื่องจาก shell ของ Master Node พังหลังจากรันเสร็จ
 - ปัญหาหลักๆของเราเกิดจากการใช้ HBase
+	- HBase ใช้แรมสูงมาก (แก้ได้แล้วโดยสร้าง swap)
+	- ไม่สามารถ config zookeeper ให้ทำงานร่วมกับ HBase ได้อย่างถูกต้อง
+	- สุดท้าย HBase พังไม่สามารถเข้าใช้งาน shell ได้เลย
 - Web Server ถูก config และลงตัว nodeJS ไว้เรียบร้อย แต่ยังไม่ได้เขียนส่วนที่ทำการแตกประโยคจาก user input เพราะตัว Master node ดันมีปัญหาซะก่อน
 - กว่าจะเริ่มโปรเจคได้ก็ช้ามาก เนื่องจากมองภาพรวมของโปรเจคไม่ออก ว่าต้องใช้ส่วนไหนในการ MapReduce
 
