@@ -38,7 +38,7 @@
 
 **Slave Node (2)**
 
-> ** Hadoop**
+> **Hadoop**
 
 > - หน้าที่: เป็นตัวประมวนผลของ Hadoop ที่ได้รับคำสั่งมาจาก MasterNode
 > - วิธีติดตั้ง: ติดตั้ง hadoop ตาม guideline ทั่วๆไปแบบ single-node ก่อน แล้วจึง config 
