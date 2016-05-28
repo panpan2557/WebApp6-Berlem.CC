@@ -3,7 +3,7 @@
 
 ##Final Group Project
 
-![Image](/imgs/Pic1.png)
+![Image](https://github.com/panpan2557/WebApp6-Berlem.CC/blob/master/Final%20Project/imgs/Pic1.png)
 
 
 **Load Balance (1)**
