@@ -84,6 +84,12 @@
 >- ทำการ reduce โดย for each: values เขียนลงไปใน HTable
 >-- เขียน key(sentence) + Info ลง HTable Sentence = key , Info = sentence no. + page
 
+![Image](https://github.com/panpan2557/WebApp6-Berlem.CC/blob/master/Final%20Project/imgs/Pic2.png)
+----------
+**Completion**
+
+![Image](https://github.com/panpan2557/WebApp6-Berlem.CC/blob/master/Final%20Project/imgs/Pic3.png)
+
 ----------
 **Problem**
 - Code MapReduce สามารถรันได้ แต่ไม่สามารถ ดูผลลัพธ์ใน HTable จาก Master ได้เนื่องจาก shell ของ Master Node พังหลังจากรันเสร็จ
@@ -106,3 +112,9 @@
 - Patawat Watakul 5610545714
 -- รับผิดชอบส่วนของ hadoop คิดวิธีการจัดการไฟล์หนังสือ และ การประยุกต์ใช้ MapReduce ของโปรเจค 
 -- เตรียม slide ที่ใช้นำเสนอ
+- Chinnabhorn Soonue 5610546231
+-- รับผิดชอบในส่วนการติดตั้งและตั้งค่าการทำงาน Hadoop Master, Hadoop Slave, Load Balancer, HBase และ zookeeper (แต่ติดตั้ง zookeeper ไม่สำเร็จ) 
+- Chonnipa Kittisiriprasert 5610546222
+-- รับผิดชอบส่วน Frontend 
+-- ทำหน้าเว็บไซต์ 
+-- ติดตั้ง Web Server ด้วย NodeJS
