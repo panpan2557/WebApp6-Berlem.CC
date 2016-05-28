@@ -1,6 +1,6 @@
 # 01204498 - Web Application Development
 
-### Group Assignment Homework
+### Group Assignment
 
 
 ## Homework V - Hadoop
