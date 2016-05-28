@@ -9,21 +9,22 @@
 **Load Balance (1)**
 
 
-> ** HaProxy**
+> **HaProxy**
 
 > - หน้าที่: เป็น Load Balancer คอยจัดการ การเข้าถึงส่วนต่างๆของเว็บไซต์
 > - วิธีติดตั้ง: Linux สามารถติดตั้ง HaProxy ได้ง่ายๆโดยใช้คำสั่ง apt-get install haproxy แล้ว config ค่าไฟล์ haproxy.cfg ก็สามารถใช้งานได้แล้ว
 
 
 **Web Server (2)**
-> ** nodeJS**
+
+> **NodeJS**
 
 > - หน้าที่: ใช้ nodeJS ติดตั้ง plugin express เพื่อใช้เป็น webserver ในการรัน ReactJS ของหน้าเว็บไซต์
 > - วิธีติดตั้ง: ...
 
 **Master Node (1)**
 
-> ** Hadoop + HBase**
+> **Hadoop + HBase + zookeeper**
 
 > - หน้าที่: เป็นตัวช่วยใน การจัดการ และควบคุมการทำงานของ Hadoop ระหว่าง Slave Node
 > - วิธีติดตั้ง: ติดตั้ง hadoop ตาม guideline ทั่วๆไปแบบ single-node ก่อน แล้วจึง config (อะไรต่อวะ เขียนต่อด้วยว่าต้องเซตให้ตัวนี้เป็น master ใน slave)
