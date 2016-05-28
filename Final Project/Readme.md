@@ -104,17 +104,17 @@
 **Member Participation**
 
 - Punpikorn Rattanawirojkul 5610545722 
--- รับผิดชอบส่วนของ hadoop คิดวิธีการจัดการไฟล์หนังสือ และ การประยุกต์ใช้ MapReduce ของโปรเจค 
--- เตรียม slide ที่ใช้นำเสนอ
+	- รับผิดชอบส่วนของ hadoop คิดวิธีการจัดการไฟล์หนังสือ และ การประยุกต์ใช้ MapReduce ของโปรเจค 
+	- เตรียม slide ที่ใช้นำเสนอ
 - Kittipat Promdirek 5610546699
--- รับผิดชอบส่วนของ hadoop คิดวิธีการจัดการไฟล์หนังสือ และ การประยุกต์ใช้ MapReduce ของโปรเจค 
--- เตรียม slide ที่ใช้นำเสนอ
+	- รับผิดชอบส่วนของ hadoop คิดวิธีการจัดการไฟล์หนังสือ และ การประยุกต์ใช้ MapReduce ของโปรเจค 
+	- เตรียม slide ที่ใช้นำเสนอ
 - Patawat Watakul 5610545714
--- รับผิดชอบส่วนของ hadoop คิดวิธีการจัดการไฟล์หนังสือ และ การประยุกต์ใช้ MapReduce ของโปรเจค 
--- เตรียม slide ที่ใช้นำเสนอ
+	- รับผิดชอบส่วนของ hadoop คิดวิธีการจัดการไฟล์หนังสือ และ การประยุกต์ใช้ MapReduce ของโปรเจค 
+	- เตรียม slide ที่ใช้นำเสนอ
 - Chinnabhorn Soonue 5610546231
--- รับผิดชอบในส่วนการติดตั้งและตั้งค่าการทำงาน Hadoop Master, Hadoop Slave, Load Balancer, HBase และ zookeeper (แต่ติดตั้ง zookeeper ไม่สำเร็จ) 
+	- รับผิดชอบในส่วนการติดตั้งและตั้งค่าการทำงาน Hadoop Master, Hadoop Slave, Load Balancer, HBase และ zookeeper (แต่ติดตั้ง zookeeper ไม่สำเร็จ) 
 - Chonnipa Kittisiriprasert 5610546222
--- รับผิดชอบส่วน Frontend 
--- ทำหน้าเว็บไซต์ 
--- ติดตั้ง Web Server ด้วย NodeJS
+	- รับผิดชอบส่วน Frontend 
+	- ทำหน้าเว็บไซต์ 
+	- ติดตั้ง Web Server ด้วย NodeJS
