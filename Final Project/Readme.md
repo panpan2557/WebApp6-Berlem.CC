@@ -3,7 +3,7 @@
 
 ##Final Group Project
 
-![Image of Yaktocat](https://github.com/panpan2557/WebApp6-Berlem.CC/Final Project/imgs/Pic1.png)
+![Image](/imgs/Pic1.png)
 
 
 **Load Balance (1)**
